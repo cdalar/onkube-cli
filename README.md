@@ -45,6 +45,7 @@ onkube new metabase
 
 for now, only metabase is available. 
 
+CLI doesn't wait for the container to be ready - async call - so give some time to k8s to make it ready. 
+You can also go ```bash onkube new nginx ``` just for fun. 
+
 Have fun. 
-
-
