@@ -1,37 +1,50 @@
-## Welcome to GitHub Pages
+## This is a alpha stage project. Use it with your own risk. 
 
-You can use the [editor on GitHub](https://github.com/cdalar/onkube-cli/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+To install the cli tool just execute the command below. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+curl -sSL https://api.onkube.io/dl | sh
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Just call the command to see how to use. 
 
-### Jekyll Themes
+```bash
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cdalar/onkube-cli/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+❯ onkube
+onkube.com CLI application.
+Manage your deployment simply over your terminal.
 
-### Support or Contact
+Usage:
+  onkube [command]
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Available Commands:
+  help        Help about any command
+  login       Login to onkube.com
+  logout      Login to onkube.com
+  ls          List Deployments
+  new         Create a new deployment
+  register    Register to onkube.com
+  version     Print the version number of onkube
+
+Flags:
+  -h, --help   help for onkube
+
+Use "onkube [command] --help" for more information about a command.
+
+
+```
+
+1. Register with ```onkube register``` if you don't have an account.
+2. Login with ```onkube login```.
+
+Now you can create ex. metabase just with the following command. 
+
+```bash
+onkube new metabase
+```
+
+for now, only metabase is available. 
+
+Have fun. 
+
+
